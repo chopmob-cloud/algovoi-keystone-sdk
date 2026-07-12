@@ -57,15 +57,28 @@ A chain is **valid** only when every link recomputes (and matches any declared
 
 ## Documentation map
 
-Start at the [Quickstart](quickstart.md). Then reach for the reference you need:
+Start at the [Quickstart](quickstart.md) and read [Distribution](distribution.md)
+to understand which surface gives you what. Then reach for the reference you need.
 
+**Getting started**
 - **[Quickstart](quickstart.md)**: install, verify the golden chain, verify a passport.
-- **[CLI reference](cli.md)**: every command, every flag, exit codes, output format.
-- **[Chains](chains.md)**: the chain file format, `@name` binding, references, the cap, worked example.
-- **[Assertions](assertions.md)**: the full option surface: `scope_subset`, `field_equals`, `time_within`, `not_revoked`, `journey`, plus the scope-containment rules.
-- **[Passports](passport.md)**: present, inspect and verify agent passports; the verdict and status model.
+- **[Distribution](distribution.md)**: the independent PyPI pieces vs the complete suite.
+
+**The verifier + passport** (the `algovoi-keystone-compose` package)
+- **[CLI reference](cli.md)**: every `keystone-compose` command, flag, exit code.
+- **[Chains](chains.md)**: the chain file format, `@name` binding, references, the cap.
+- **[Assertions](assertions.md)**: `scope_subset`, `field_equals`, `time_within`, `not_revoked`, `journey`, plus the scope-containment rules.
+- **[Passports](passport.md)**: present, inspect and verify agent passports.
 - **[Python API](python-api.md)**: every public function and dataclass with signatures.
-- **[Conformance](conformance.md)**: Python and Node byte-parity, the self-test, the example vectors.
+- **[Conformance](conformance.md)**: Python and Node byte-parity, the self-test, the vectors.
+
+**The keystone framework** (the complete suite)
+- **[The `keystone` CLI](keystone-cli.md)**: `info` / `doctor` / `new` / `test` / `validate` / `journal` / `publish`.
+- **[`keystone_ref` and connectors](keystone-ref.md)**: the primitive, the connector model, conformance helpers.
+- **[Execution and decision refs](execution-ref.md)**: the `execution_ref` / `decision_ref` / `trust_query_ref` builders.
+- **[The Journal and Runtime](journal.md)**: the tamper-evident SQLite journal and gated runtime.
+- **[The agent engine](agent.md)**: rules, triggers, behaviours, the Engine, guarding writes.
+- **[The Control Panel](control-panel.md)**: discover and manage every installed keystone piece.
 
 ## What is in scope, and what is not
 

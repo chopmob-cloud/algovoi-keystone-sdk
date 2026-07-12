@@ -99,6 +99,13 @@ Full docs live in [`docs/`](docs/):
 | [Passports](docs/passport.md) | Present, inspect and verify agent passports offline |
 | [Python API](docs/python-api.md) | Every public function and dataclass |
 | [Conformance](docs/conformance.md) | Python and Node parity, and the example vectors |
+| [Distribution](docs/distribution.md) | Independent PyPI pieces vs the complete suite |
+| [The `keystone` CLI](docs/keystone-cli.md) | info / doctor / new / test / validate / journal / publish |
+| [`keystone_ref` + connectors](docs/keystone-ref.md) | The primitive and the connector model |
+| [Execution refs](docs/execution-ref.md) | execution_ref / decision_ref / trust_query_ref builders |
+| [Journal + Runtime](docs/journal.md) | The tamper-evident journal and gated runtime |
+| [Agent engine](docs/agent.md) | Rules, triggers, behaviours, guarding writes |
+| [Control Panel](docs/control-panel.md) | Discover and manage installed keystone pieces |
 
 ## License
 
