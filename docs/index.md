@@ -61,7 +61,8 @@ Start at the [Quickstart](quickstart.md) and read [Distribution](distribution.md
 to understand which surface gives you what. Then reach for the reference you need.
 
 **Getting started**
-- **[Quickstart](quickstart.md)**: install, verify the golden chain, verify a passport.
+- **[Start with the Control Panel](control-panel.md#start-here-the-panel-first-workflow)**: install the panel, let it discover your pieces, then work with the SDK.
+- **[Quickstart](quickstart.md)**: install the verifier, verify the golden chain, verify a passport.
 - **[Distribution](distribution.md)**: the independent PyPI pieces vs the complete suite.
 
 **The verifier + passport** (the `algovoi-keystone-compose` package)
