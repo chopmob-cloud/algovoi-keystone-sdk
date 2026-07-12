@@ -95,6 +95,7 @@ Full docs live in [`docs/`](docs/):
 | [Quickstart](docs/quickstart.md) | Zero to a verified chain and a verified passport in five minutes |
 | [CLI reference](docs/cli.md) | Every `keystone-compose` command and flag, with exit codes |
 | [Chains](docs/chains.md) | The chain file format, `@name` composition, refs, the cap |
+| [Aliasing](docs/aliasing.md) | Map your own field names / variables into a chain via `@name` |
 | [Assertions](docs/assertions.md) | All five assertion kinds and the scope-containment model |
 | [Passports](docs/passport.md) | Present, inspect and verify agent passports offline |
 | [Python API](docs/python-api.md) | Every public function and dataclass |

@@ -67,6 +67,7 @@ to understand which surface gives you what. Then reach for the reference you nee
 **The verifier + passport** (the `algovoi-keystone-compose` package)
 - **[CLI reference](cli.md)**: every `keystone-compose` command, flag, exit code.
 - **[Chains](chains.md)**: the chain file format, `@name` binding, references, the cap.
+- **[Aliasing](aliasing.md)**: map your own field names and variables into a chain via `@name`.
 - **[Assertions](assertions.md)**: `scope_subset`, `field_equals`, `time_within`, `not_revoked`, `journey`, plus the scope-containment rules.
 - **[Passports](passport.md)**: present, inspect and verify agent passports.
 - **[Python API](python-api.md)**: every public function and dataclass with signatures.
