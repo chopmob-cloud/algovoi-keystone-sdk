@@ -166,4 +166,5 @@ The example set demonstrates the golden path and one failure per assertion class
 And the revocation set: [`revocation-golden.json`](../examples/revocation-golden.json),
 [`revocation-broken-after.json`](../examples/revocation-broken-after.json) (acted
 after revocation), [`revocation-broken-revoker.json`](../examples/revocation-broken-revoker.json)
-(revoker was not the grantor), and [`revocation-multihop.json`](../examples/revocation-multihop.json).
+(revoker was not the grantor), and [`revocation-multihop.json`](../examples/revocation-multihop.json)
+(a multi-hop violation caught: C acts after A revoked the upstream grant).

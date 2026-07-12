@@ -57,7 +57,7 @@ suite exercises both the accept and the reject path.
 | [`revocation-golden.json`](../examples/revocation-golden.json) | `not_revoked` before revocation | valid |
 | [`revocation-broken-after.json`](../examples/revocation-broken-after.json) | Acted at or after revocation | broken (`not_revoked`) |
 | [`revocation-broken-revoker.json`](../examples/revocation-broken-revoker.json) | Revoker not the grantor | broken (`field_equals`) |
-| [`revocation-multihop.json`](../examples/revocation-multihop.json) | Revocation cascades multi-hop | valid |
+| [`revocation-multihop.json`](../examples/revocation-multihop.json) | Multi-hop cascade caught: C acts after A revoked the upstream grant | broken (`not_revoked`) |
 | [`journey-golden.json`](../examples/journey-golden.json) | `journey` covers every hop | valid |
 | [`journey-broken.json`](../examples/journey-broken.json) | A hop omitted from the journey | broken (`journey`) |
 | [`passport_vectors.json`](../examples/passport_vectors.json) | Passport decode and verify | mixed |
