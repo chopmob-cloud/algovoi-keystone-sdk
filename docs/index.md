@@ -80,17 +80,19 @@ to understand which surface gives you what. Then reach for the reference you nee
 - **[The agent engine](agent.md)**: rules, triggers, behaviours, the Engine, guarding writes.
 - **[The Control Panel](control-panel.md)**: discover and manage every installed keystone piece.
 
-## What is in scope, and what is not
+## What this documentation covers
 
-This SDK **verifies**. It recomputes and checks chains and passports offline. It
-is intentionally small: RFC 8785 JCS + SHA-256 for chains, plus a FIPS 206
-verifier for passports.
+This is the documentation for the open keystone framework: the offline verifier
+(`keystone-compose`), the [`keystone_ref` primitive and connectors](keystone-ref.md),
+the [execution and decision ref builders](execution-ref.md), the tamper-evident
+[Journal and Runtime](journal.md), and the [agent engine](agent.md). Every piece is
+content-addressed and recomputable offline, built on the one primitive.
 
-It does **not** mint credentials, enforce policy at runtime, revoke authority,
-or retain an audit trail. Those are runtime and operational concerns that live in
-the AlgoVoi payment-rails product, not in this open verifier. Keeping the two
-apart is deliberate: anyone can verify with the open trust base, independently of
-who issued or enforced.
+Two things sit outside it. **Issuing** agent credentials is an issuer-side concern,
+not part of these client-side tools. And the **commercial** AlgoVoi payment-rails
+product builds on this framework for production deployments. The framework itself
+is open, so anyone can verify and compose on the same trust base, independently of
+who issued or operated it.
 
 ## License
 
