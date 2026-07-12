@@ -106,6 +106,7 @@ Full docs live in [`docs/`](docs/):
 | [Journal + Runtime](docs/journal.md) | The tamper-evident journal and gated runtime |
 | [Agent engine](docs/agent.md) | Rules, triggers, behaviours, guarding writes |
 | [Control Panel](docs/control-panel.md) | Discover and manage installed keystone pieces |
+| [Building a bolt-on](docs/bolt-ons.md) | Scaffold, implement, test and publish a connector / behaviour / stage |
 
 ## License
 

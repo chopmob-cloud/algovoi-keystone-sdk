@@ -79,6 +79,7 @@ to understand which surface gives you what. Then reach for the reference you nee
 - **[The Journal and Runtime](journal.md)**: the tamper-evident SQLite journal and gated runtime.
 - **[The agent engine](agent.md)**: rules, triggers, behaviours, the Engine, guarding writes.
 - **[The Control Panel](control-panel.md)**: discover and manage every installed keystone piece.
+- **[Building a bolt-on](bolt-ons.md)**: scaffold, implement, test and publish your own connector, behaviour or stage.
 
 ## What this documentation covers
 
