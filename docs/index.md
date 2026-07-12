@@ -76,6 +76,7 @@ to understand which surface gives you what. Then reach for the reference you nee
 **The keystone framework** (the complete suite)
 - **[The `keystone` CLI](keystone-cli.md)**: `info` / `doctor` / `new` / `test` / `validate` / `journal` / `publish`.
 - **[`keystone_ref` and connectors](keystone-ref.md)**: the primitive, the connector model, conformance helpers.
+- **[The connector library](connectors.md)**: ready-made connectors for Redis, S3, SQLAlchemy, Kafka, and more.
 - **[Execution and decision refs](execution-ref.md)**: the `execution_ref` / `decision_ref` / `trust_query_ref` builders.
 - **[The Journal and Runtime](journal.md)**: the tamper-evident SQLite journal and gated runtime.
 - **[The agent engine](agent.md)**: rules, triggers, behaviours, the Engine, guarding writes.

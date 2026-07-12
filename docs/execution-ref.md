@@ -83,6 +83,25 @@ assert verify_record(record)
 `ExecutionRefError` is raised when inputs violate the discipline (for example a
 non-string scope, or an outcome outside the allowed set).
 
+## Retention chain
+
+`algovoi-retention-chain` builds an append-only, tamper-evident chain of receipt
+hashes, the structure `execution_binding` points at through its
+`retention_chain_ref`. Each link binds the previous receipt hash, so a broken or
+reordered link is detected.
+
+```python
+from algovoi_retention_chain import retention_chain_ref, verify_chain_link, verify_chain_sequence
+
+ref = retention_chain_ref(
+    prev_receipt_hash="sha256:...", receipt_hash="sha256:...",
+    chain_seq=1, issuer_id="my-issuer",
+)
+verify_chain_link(chain_ref=ref, prev_receipt_hash="sha256:...",
+                  receipt_hash="sha256:...", chain_seq=1, issuer_id="my-issuer")  # True = intact
+verify_chain_sequence(records)   # True when the whole sequence is an unbroken chain
+```
+
 ## CLI
 
 ```

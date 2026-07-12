@@ -103,6 +103,7 @@ Full docs live in [`docs/`](docs/):
 | [Distribution](docs/distribution.md) | Independent PyPI pieces vs the complete suite |
 | [The `keystone` CLI](docs/keystone-cli.md) | info / doctor / new / test / validate / journal / publish |
 | [`keystone_ref` + connectors](docs/keystone-ref.md) | The primitive and the connector model |
+| [Connector library](docs/connectors.md) | Ready-made connectors for Redis / S3 / SQLAlchemy / Kafka / etc. |
 | [Execution refs](docs/execution-ref.md) | execution_ref / decision_ref / trust_query_ref builders |
 | [Journal + Runtime](docs/journal.md) | The tamper-evident journal and gated runtime |
 | [Agent engine](docs/agent.md) | Rules, triggers, behaviours, guarding writes |
