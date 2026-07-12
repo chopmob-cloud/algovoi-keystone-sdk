@@ -1,0 +1,16 @@
+algovoi-keystone
+Copyright 2026 Christopher Hopley / AlgoVoi (chopmob-cloud)
+
+This product is part of the AlgoVoi agentic-payments substrate, authored by
+Christopher Hopley (AlgoVoi) and licensed under the Apache License, Version 2.0.
+
+algovoi-keystone verifies that an agentic-action keystone chain composes end to
+end: each link's reference is "sha256:" + SHA-256(RFC 8785 JCS(preimage)), and a
+downstream preimage binds an upstream link by @name so the whole chain is one
+recomputable sequence. The canonicalisation discipline it relies on is
+urn:x402:canonicalisation:jcs-rfc8785-v1, specified in IETF Internet-Draft
+draft-hopley-x402-canonicalisation-jcs-v1.
+
+If you redistribute this work or derivative works, you must retain this NOTICE
+and the attribution it carries, as required by Section 4(d) of the Apache License,
+Version 2.0.
