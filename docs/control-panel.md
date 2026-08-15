@@ -78,6 +78,7 @@ Because the panel reads only what is installed locally and discovers pieces by
 entry point, it is the single place to see your whole keystone footprint at once,
 and the entry point to the rest of the complete suite.
 
-> Note: the Control Panel ships as compiled wheels built for a specific Python
-> version. Install it into a matching interpreter (see the package's PyPI page for
-> the supported versions).
+> Note: the Control Panel ships as compiled wheels, one per interpreter, for
+> **CPython 3.10 through 3.13** on **Linux** (x86_64 and aarch64/ARM) and
+> **Windows** (AMD64). `pip install` picks the matching wheel automatically; no
+> build toolchain is needed. (See the package's index page for the current list.)

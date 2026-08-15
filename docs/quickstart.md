@@ -17,6 +17,13 @@ pip install "algovoi-keystone-compose[passport]"
 
 The only base dependency is `rfc8785`. The verifier makes no network call.
 
+**Platforms.** Prebuilt wheels ship for **Linux** (x86_64 and aarch64/ARM) and
+**Windows** (AMD64), on CPython 3.10 through 3.13, so `pip install` resolves a
+compiled wheel on each with no build toolchain. Every reference recomputes
+byte-for-byte identically across those platforms (a chain built on one verifies
+on another). The compiled packages stay source-protected (only the built
+extension ships, never the `.pyx`).
+
 ## 2. Verify a chain
 
 Grab the canonical golden chain shipped in the repo (or point at your own):

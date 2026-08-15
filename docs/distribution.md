@@ -44,6 +44,17 @@ See [the Control Panel](control-panel.md) and the hosted docs at
   **complete suite** through the Control Panel, so the pieces are present and
   discover each other.
 
+## Platforms
+
+Every compiled package ships prebuilt wheels for **Linux** (x86_64 and
+aarch64/ARM) and **Windows** (AMD64), on CPython 3.10 through 3.13. `pip install`
+resolves a compiled wheel on each, with no build toolchain and no `.pyx` source
+in the wheel. Pure-Python pieces (the umbrella, `algovoi-keystone-connect`,
+`algovoi-execution-ref`, and the storage/transport connectors) run anywhere
+Python does. Because the underlying primitive is deterministic (see below), a
+reference built on one platform is byte-identical to the same reference built on
+another, so chains compose and verify across Linux, ARM, and Windows alike.
+
 ## One primitive underneath both
 
 Every piece on either surface is built on the same single primitive:
