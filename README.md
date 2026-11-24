@@ -1,6 +1,6 @@
 # algovoi-keystone
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE) [![algovoi-jcs-conformance-vectors](https://img.shields.io/badge/algovoi--jcs--conformance--vectors-8A2BE2)](https://github.com/chopmob-cloud/algovoi-jcs-conformance-vectors)
 
 **One command to prove an agentic-action keystone chain composes end to end.**
 
